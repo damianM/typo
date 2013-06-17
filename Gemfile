@@ -10,20 +10,7 @@ unless File.exists?(dbfile)
   end
 end
 
-conf = YAML.load(File.read(dbfile))
-environment = conf[env]
-adapter = environment['adapter'] if environment
-raise "You need define an adapter in your database.yml or set your RAILS_ENV variable" if adapter == '' || adapter.nil?
-case adapter
-when 'sqlite3'
-  gem 'sqlite3'
-when 'postgresql'
-  gem 'pg'
-when 'mysql2'
-  gem 'mysql2'
-else
-  raise "Don't know what gem to use for adapter #{adapter}"
-end
+gem 'mysql2'
 
 source 'https://rubygems.org'
 
