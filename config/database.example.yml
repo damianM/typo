@@ -1,0 +1,10 @@
+production:
+  adapter: mysql2
+  encoding: utf8
+  pool: 30
+  timeout: 5000
+  wait_timeout: 5000
+  database: knowmaths_blog
+  username: knowmaths
+  password: KwMhs;#11><
+  host: 127.0.0.1
