@@ -26,6 +26,10 @@ gem 'akismet', '~> 1.0'
 gem 'capistrano'
 gem 'rvm-capistrano'
 
+# cron jobs
+gem 'whenever', :require => false
+gem 'daemons'
+
 # TODO: Replace with jquery
 gem 'prototype-rails', '~> 3.2.1'
 gem 'prototype_legacy_helper', '0.0.0', :git => 'http://github.com/rails/prototype_legacy_helper.git'
